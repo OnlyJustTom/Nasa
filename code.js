@@ -32,7 +32,6 @@ const distanceScalingFactor = 10000000; // Scaling factor for distances
 const sun = createPlanet(0xffd100, (348215 / sizeScalingFactor), 0, 0, 0);
 const sunTag = createTextTag("The Sun", sun.position);
 
-
 const planets = [
     { name: 'Mercury', color: 0xff0000, radius: 2439.5, distance: (57900000 / distanceScalingFactor), speed: 0.474, description: 'Mercury is the closest planet to the Sun.' },
     { name: 'Venus', color: 0xff8700, radius: 6052, distance: (108200000 / distanceScalingFactor), speed: 0.035, description: 'Venus is the hottest planet in the solar system.' },
@@ -146,5 +145,4 @@ function createOrbitLine(distance) {
     
     return orbitLine;
 }
-
 
